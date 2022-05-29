@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  background: #1a2147;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.4) 0%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
+  backdrop-filter: blur(10px);
+}
+
+.header {
+  width: 85%;
+  margin: auto;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  font-family: "MuseoModerno", cursive;
+  font-weight: 900;
+  font-size: 1.6rem;
+  line-height: 1.7rem;
+  color: #ffffff;
+  display: flex;
+  justify-content: flex-start;
+}
+
+form {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  position: relative;
+}
+
+label {
+  height: 48px;
+  width: 100%;
+  background: transparent;
+  border: 1px solid #f5f5f5;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+label img{
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+    filter: brightness(0) invert(1);
+}
+label input{
+    width: 100%;
+    height: 100%;
+    color: #f5f5f5;
+    border: none;
+  background: transparent;
+    outline: none;
+    font-family: "Mulish", sans-serif;
+}
+input::placeholder{
+    color: #f5f5f5;
+}
+
+.condition {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.location {
+  margin-right: 16px;
+}
+
+.location p {
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  line-height: 15px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.location h4 {
+  font-family: "Mulish", sans-serif;
+  font-weight: 600;
+  font-size: 1.05rem;
+  line-height: 23px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+section {
+  display: grid;
+  place-items: center;
+}
+.main {
+  padding-top: 1.5rem;
+  width: 60%;
+}
+.weather-condition {
+   background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.4) 0%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
+  backdrop-filter: blur(10px);       
+  border: 1px solid;
+  border-color: lightgrey transparent transparent lightgrey;
+}
+
+.condition-big {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: space-between;
+  margin: auto;
+  margin: 51px 53px 71px 53px;
+}
+.location-big p {
+  font-family: "poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 24px;
+  color: #fff;
+  letter-spacing: 0.02em;
+}
+
+.location-big h3 {
+  font-family: "Mulish", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  color: #ffff;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  margin-top: 8px;
+}
+
+.number {
+  display: flex;
+  margin-top: 46px;
+  position: relative;
+}
+
+.number h1 {
+  font-family: "Mulish", sans-serif;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 72px;
+  color: #fff;
+  letter-spacing: 0.02em;
+}
+
+.number p {
+  margin-left: 35px;
+  font-family: "Mulish", sans-serif;
+  font-weight: 500;
+  position: absolute;
+  left: 50%;
+  font-size: 36px;
+  letter-spacing: 0.02em;
+  line-height: 40px;
+  bottom: 0;
+}
+
+main {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(./Images/Weather.png), #000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  
+}
