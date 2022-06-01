@@ -1,65 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
-</head>
-<body>
-    <Main>
-        <header>
-            <div class="header">
-                <div class="logo-container">
-                    <h1>SOS WEATHER</h1>
-                </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Orbitron"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="icon" type="image/x-icon" href="/images/partly-cloudy.svg" />
 
-                <form action="">
-                    <label class="search">
-                        <img src="./Images/Search.svg" alt="search-icon" />
-                        <input type="text" placeholder="search location"  />
-                    </label>
-                </form>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Weather</title>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <div class="logo-container">
+          <h1>SOS WEATHER</h1>
+        </div>
 
-                <div class="condition">
-                    <div class="location">
-                        <p>current location</p>
-                        <h4>Lagos, Nigeria</h4>
-                    </div>
-                    <div class="small-w-image">
-                        <img src="./Images/partly-cloudy.svg" alt="small-weather-image">
-                    </div>
-                </div>
+        <label class="search">
+          <button class="search">
+            <img src="./Images/Search.svg" alt="search-icon" />
+          </button>
+          <input
+            type="text"
+            placeholder="search location"
+            class="search-input"
+          />
+        </label>
+
+        <div class="condition">
+          <div id="time"></div>
+          <div class="small-w-image">
+            <img src="" alt="small-weather-image" class="small-icon" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="main">
+        <div class="weather loading">
+          <div class="location-big">
+            <p class="current">Current Weather In</p>
+            <h3 class="city"></h3>
+            <div class="number">
+              <h2 class="temp"></h2>
+              <p class="description"></p>
             </div>
-        </header>
-        <section>
-            <div class="main">
+            <p class="humidity"></p>
+            <p class="wind"></p>
+          </div>
+          <div class="big-w-image">
+            <img src="" alt="icon" class="icon" />
+          </div>
+        </div>
+      </section>
+    </main>
 
-                <div class="weather-condition">
-
-                    <div class="condition-big">
-
-                       <div class="location-big">
-                            <p>Current location</p>
-                            <h3>Lagos, Nigeria</h3>
-                            <div class="number">
-                                <h1>28&#176</h1>
-                                <p>cloudy</p>
-                            </div>
-                       </div>
-                       
-                       <div class="big-w-image">
-                           <img src="./Images/partly-cloudy-big.svg" alt="" />
-                       </div>
-
-                    </div> 
-                </div>
-        </section>
-    </Main>
-</body>
+    <script src="./script.js"></script>
+  </body>
 </html>
