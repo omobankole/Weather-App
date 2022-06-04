@@ -1,7 +1,4 @@
 
-
-
-
 let weather = {
   apiKey: "2a052e62ce00854dd3075a2ba663159a",
   fetchWeather: function (city) {
@@ -12,11 +9,8 @@ let weather = {
         this.apiKey
     )
       .then((response) => response.json())
-      .then((data) => this.displayWeather(data))
-      .catch((error) => {
-       msg.textContent = "Please search for a valid city 😩";
-       console.log(error);
-      });
+      .then((data) => this.displayWeather(data));
+      
   },
   displayWeather: function (data) {
     const { name } = data;
@@ -63,9 +57,9 @@ setInterval(() => {
   let hours = date.getHours();
   let minutes = date.getMinutes();
   let seconds = date.getSeconds();
-  let day_night = "PM";
-  if (hours < 12) {
-    day_night = "AM";
+  let day_night = "AM";
+  if (hours > 12) {
+    day_night = "PM";
     hours = hours - 12;
   }
   if (hours < 10) {

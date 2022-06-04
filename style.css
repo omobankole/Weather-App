@@ -108,6 +108,7 @@ input::placeholder {
   background: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(50px);
   padding: 3rem;
+  border-radius: 8px;
 }
 .weather {
   display: flex;
